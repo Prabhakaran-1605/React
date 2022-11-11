@@ -6,7 +6,6 @@
 
 3. Piece of reusable user interface code */
 
-
 let App = function App() 
 {
   return <div> 
@@ -22,6 +21,8 @@ let App = function App()
     <h2> MERN Stack Developer </h2>
     <p> As a MERN Stack Developer, l have knowlegde in HTML, CSS, BOOTSTRAP, JAVASCRIPT & REACT </p>
     <hr />
+    
+   
   </div>
 }
 
