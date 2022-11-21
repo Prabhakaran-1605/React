@@ -1,0 +1,22 @@
+let Employees = [{"id":1,"first_name":"Gael","email":"gupston0@cbc.ca","gender":"Female"},
+{"id":2,"first_name":"Michaela","email":"mharsent1@phoca.cz","gender":"Genderqueer"},
+{"id":3,"first_name":"Solomon","email":"sbenallack2@unc.edu","gender":"Male"},
+{"id":4,"first_name":"Korry","email":"kletchmore3@xinhuanet.com","gender":"Female"},
+{"id":5,"first_name":"Alice","email":"ahammerton4@youku.com","gender":"Female"},
+{"id":6,"first_name":"Arabella","email":"akovacs5@shutterfly.com","gender":"Female"},
+{"id":7,"first_name":"Julius","email":"jtirone6@cdbaby.com","gender":"Male"},
+{"id":8,"first_name":"Giralda","email":"gjopling7@ameblo.jp","gender":"Female"},
+{"id":9,"first_name":"Garvin","email":"gpaute8@addthis.com","gender":"Male"},
+{"id":10,"first_name":"Karna","email":"kpavlishchev9@cmu.edu","gender":"Female"},
+{"id":11,"first_name":"Bertie","email":"bingreea@google.com.hk","gender":"Female"},
+{"id":12,"first_name":"Isador","email":"iloverockb@cpanel.net","gender":"Male"},
+{"id":13,"first_name":"Tab","email":"tbaldackc@guardian.co.uk","gender":"Male"},
+{"id":14,"first_name":"Joannes","email":"jwadleyd@vistaprint.com","gender":"Female"},
+{"id":15,"first_name":"Gaven","email":"glumme@jigsy.com","gender":"Male"},
+{"id":16,"first_name":"Teri","email":"treidshawf@newyorker.com","gender":"Female"},
+{"id":17,"first_name":"Ephraim","email":"eszymczykg@jimdo.com","gender":"Male"},
+{"id":18,"first_name":"Mortie","email":"mbierh@nytimes.com","gender":"Male"},
+{"id":19,"first_name":"Madeline","email":"mionni@columbia.edu","gender":"Female"},
+{"id":20,"first_name":"Steffen","email":"sodeaj@java.com","gender":"Male"}]
+
+export default Employees
