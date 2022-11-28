@@ -21,19 +21,19 @@ class Employee extends react.Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                {Employees.map((employee, index) => {
-                                    return<tr key = { index }> 
-                            <td> {employee.id}</td>
-                            <td>{employee.first_name}</td>
-                            <td>{employee.email}</td>
-                            <td>{employee.gender}</td>
-                        </tr>
-                                    })
-                                    }
-                    </tbody>
-                </table>
-            </div>
-        </div>
+                                {Employees.map((employee, index) => { 
+                                    return <tr key={index}>
+                                        <td> {employee.id}</td>
+                                        <td>{employee.first_name}</td>
+                                        <td>{employee.email}</td>
+                                        <td>{employee.gender}</td>
+                                    </tr>
+                                })
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div >
         </>
     }

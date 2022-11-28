@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 
 class Message extends Component {
     state = {
-        character: 100,
+        character: 200,
     }
 
     updateHandler=(event)=>{
-        this.setState({character : 100 - event.target.value.length}) 
+        this.setState({character : 200 - event.target.value.length}) 
     }
 
     render() 
@@ -24,9 +24,9 @@ class Message extends Component {
                                     <input placeholder="Phone Number"type="number" name="phoneno"className="form-control bg-warning text-white" />
                                 </div>
                                 <div>
-                                    <textarea placeholder="TextArea"maxLength="100" rows="5" name="textarea" className="form-control bg-warning text-white" onChange={this.updateHandler}></textarea>
+                                    <textarea placeholder="TextArea"maxLength="100" rows="10"  className="form-control bg-warning text-white" onChange={this.updateHandler}></textarea>
                                 </div>
-                                <pre className="text-white">Remaining Character : {this.state.character}</pre>
+                                <pre className="text-white ml-auto">Remaining Character : {this.state.character}</pre>
                             </form>
 
                         </div>
