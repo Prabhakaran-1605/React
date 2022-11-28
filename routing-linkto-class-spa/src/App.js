@@ -3,6 +3,9 @@ import Navbar from "./navbar/Navbar"
 import Home from "./Components/Home"
 import About from "./Components/About"
 import Service from "./Components/Service"
+import User from "./Components/User"
+import User_1 from "./Components/User_1"
+import DigitalClock from "./Components/DigitalClock"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 class App extends react.Component {
 
@@ -15,6 +18,9 @@ class App extends react.Component {
           <Route path="/Home" component={Home}/>
           <Route path="/About" component={About}/>
           <Route path="/Service" component={Service}/>
+          <Route path="/User" component={User}/>
+          <Route path="/User_1" component={User_1}/>
+          <Route path="/DigitalClock" component={DigitalClock}/>
         </Switch>
 
       </Router>
