@@ -70,23 +70,33 @@ import react from "react"
 class Product extends react.Component {
 
     state = {
-        Property :{
-        product_name: "APPLE iPhone 11 (White, 128 GB)",
-        price: 44999,
-        image: "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/k/y/d/iphone-11-256-u-mwm82hn-a-apple-0-original-imafkg25mhaztxns.jpeg?q=70",
-        qty: 1,
-        }
+        Property: [{
+            product_name: "APPLE iPhone 11 (White, 128 GB)",
+            price: 44999,
+            image: "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/k/y/d/iphone-11-256-u-mwm82hn-a-apple-0-original-imafkg25mhaztxns.jpeg?q=70",
+            qty: 1,
+        }, {
+            product_name: "MOTOROLA G60 (Dynamic Gray, 128 GB)  (6 GB RAM)",
+            price: 20000,
+            image: "https://rukminim1.flixcart.com/image/416/416/knoxnrk0/mobile/g/1/j/g60-panb0000in-panb0016in-panb0012in-panb0014in-motorola-original-imag2aq9v8hzetbn.jpeg?q=70",
+            qty: 1,
+        }]
     }
 
     increHandler = () => {
 
-        this.setState({Property: {...this.state.Property, qty: this.state.Property.qty + 1}} )         
+        this.setState({ Property: [{ ...this.state.Property[0], qty: this.state.Property[0].qty + 1 }] })
+        
     }
+    
+
 
     decreHandler = () => {
 
-        this.setState({ Property : {...this.state.Property, qty: this.state.Property.qty - 1}})
+        this.setState({ Property: [{ ...this.state.Property[0], qty: this.state.Property[0].qty - 1 }] })
     }
+    
+
 
     render() {
         return <div>
@@ -104,13 +114,14 @@ class Product extends react.Component {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>{this.state.Property.product_name}</td>
-                                    <td>{this.state.Property.price}</td>
-                                    <td><img src={this.state.Property.image} alt="" height="100px" /></td>
-                                    <td><i className="fa-solid fa-circle-plus" onClick={this.increHandler}></i>   {this.state.Property.qty}   <i className="fa-solid fa-circle-minus" onClick={this.decreHandler}></i>
+                                    <td>{this.state.Property[0].product_name}</td>
+                                    <td>{this.state.Property[0].price}</td>
+                                    <td><img src={this.state.Property[0].image} alt="" height="100px" /></td>
+                                    <td><i className="fa-solid fa-circle-plus" onClick={this.increHandler}></i>   {this.state.Property[0].qty}   <i className="fa-solid fa-circle-minus" onClick={this.decreHandler}></i>
                                     </td>
-
                                 </tr>
+
+                                                                
 
 
                             </tbody>

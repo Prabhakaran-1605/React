@@ -6,7 +6,9 @@ import Service from "./Components/Service"
 import User from "./Components/User"
 import User_1 from "./Components/User_1"
 import DigitalClock from "./Components/DigitalClock"
+import Salary from "./Event Binding/Salary"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+
 class App extends react.Component {
 
   render() {
@@ -21,6 +23,7 @@ class App extends react.Component {
           <Route path="/User" component={User}/>
           <Route path="/User_1" component={User_1}/>
           <Route path="/DigitalClock" component={DigitalClock}/>
+          <Route path="/Salary" component={Salary}/>
         </Switch>
 
       </Router>

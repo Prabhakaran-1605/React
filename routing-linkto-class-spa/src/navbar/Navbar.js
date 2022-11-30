@@ -12,6 +12,7 @@ class Navbar extends Component {
        <li className="Nav-list"><Link to="/User" className="navbar-brand nav-link"> User</Link></li>
        <li className="Nav-list"><Link to="/User_1" className="navbar-brand nav-link"> User_1</Link></li>
        <li className="Nav-list"><Link to="/DigitalClock" className="navbar-brand nav-link"> Clock</Link></li>
+       <li className="Nav-list"><Link to="/Salary" className="navbar-brand nav-link"> Event-Bind</Link></li>
        </ul>
        </div>
     </nav>
