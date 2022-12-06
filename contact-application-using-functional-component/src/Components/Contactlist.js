@@ -9,12 +9,13 @@ let Contactlist = (props) => {
 
     return <>
 
+<h1 className="text-danger"> Contact List </h1>
         <pre>{JSON.stringify(props)}</pre>
 
         <div classname="container">
-            <div className="row">
+            <div className="row  bg-dark text-white">
                 <div className="col">
-                    <table className="table table-hover">
+                    <table className="table table-hover ">
                         <thead></thead>
                         <tr>
                             <th>Id</th>
