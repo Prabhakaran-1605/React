@@ -1,4 +1,3 @@
-import react from "react"
 
 let Contactlist = (props) => {
 
@@ -9,20 +8,21 @@ let Contactlist = (props) => {
 
     return <>
 
-<h1 className="text-danger"> Contact List </h1>
+<h1 className="text-danger"><b> Contact List </b></h1>
         <pre>{JSON.stringify(props)}</pre>
 
-        <div classname="container">
+        <div className="container">
             <div className="row  bg-dark text-white">
                 <div className="col">
                     <table className="table table-hover ">
-                        <thead></thead>
+                        <thead>
                         <tr>
                             <th>Id</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Gender</th>
                         </tr>
+                        </thead>
                         <tbody>
                             {props.user_contact.length > 0 ? <>
                                 {props.user_contact.map((con, index) => {

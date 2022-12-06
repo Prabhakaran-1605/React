@@ -1,6 +1,6 @@
 let Contactdetails = (props) => {
     return <>
-        <h1 className="text-danger">Contact Details</h1>
+        <h1 className="text-danger"><b>Contact Details</b></h1>
         <pre>{JSON.stringify(props.user_contact_details)}</pre>
 
         <div className="container">
@@ -11,7 +11,7 @@ let Contactdetails = (props) => {
                         <div className="card-header bg-danger">
                             <img src={props.user_contact_details.picture.large} alt="" />
                         </div>
-                        <div className="card-body  bg-primary">
+                        <div className="card-body">
                             <ul className="list-group ">
                                 <li className="list-group-item bg-success text-white"><b>Gender:</b>  {props.user_contact_details.gender}</li>
                                 <li className="list-group-item bg-success text-white"><b>First Name:</b>  {props.user_contact_details.name.first}</li>
@@ -27,10 +27,6 @@ let Contactdetails = (props) => {
                 </div>
             </div>
         </div>
-
-
-
     </>
-
 }
 export default Contactdetails

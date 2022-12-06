@@ -23,7 +23,7 @@ let Contacts = () => {
 
     return <>
 
-        <h1 className="text-danger">Contact Details</h1>
+        <h1 className="text-danger"><b>Contact Details</b></h1>
         <pre>{JSON.stringify(user)}</pre>
         <div className="container">
             <div className="row">
