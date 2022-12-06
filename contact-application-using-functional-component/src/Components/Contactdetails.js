@@ -9,7 +9,7 @@ let Contactdetails = (props) => {
                 <div className="col">
                     <div className="card">
                         <div className="card-header">
-                            <img src={props.user_contact_details.picture.large} />
+                            <img src={props.user_contact_details.picture.large} alt="" />
                         </div>
                         <div className="card-body">
                             <ul className="list-group">
