@@ -18,18 +18,13 @@ let reducer = (state = initialState, action) => {
     }
 }
 let MessageEx = () => {
-
     let [state, dispatch] = useReducer(reducer, initialState)
-
-
-
     return <>
-
         <h1>{state.msg}</h1>
         <button onClick={() => { dispatch({ type: "GM" }) }} className="btn btn-success mr-2">GM</button>
         <button onClick={() => { dispatch({ type: "GA" }) }} className="btn btn-primary mr-2">GA</button>
         <button onClick={() => { dispatch({ type: "GN" }) }} className="btn btn-danger">GN</button>
     </>
-
 }
 export default MessageEx
+
