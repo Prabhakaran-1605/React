@@ -2,7 +2,8 @@ import { GM, GN } from "./message.action"
 
 // Reducer is a pure function it takes two argument , state and action 
 
-// 
+// Reducer create or update store based on action type
+
 let initialState = {
     message: "Hello"
 }
