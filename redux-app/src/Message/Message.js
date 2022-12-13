@@ -2,8 +2,11 @@ import { useDispatch, useSelector} from "react-redux"
 import {gmAction,gnAction} from "../redux-files/message.action"
 let Message = () => {
     let dispatch = useDispatch()
+
+    // useSelector hook is used to read the store data
     
     let message = useSelector((state)=>{ return state.message})
+    
     let gmHandler = () => {
         // dispatch an Action - To dispatch an action we have to use useDispatch hook.
         dispatch(gmAction())
