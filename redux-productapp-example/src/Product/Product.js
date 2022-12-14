@@ -1,25 +1,29 @@
-import {useDispatch} from "react-redux"
-import { incrAction,decrAction  } from "../redux/product.action"
+import { useDispatch, useSelector } from "react-redux"
+import { incrAction, decrAction } from "../redux/product.action"
 let Product = () => {
-    let product = {
+
+    let product = useSelector((state) => { return state.product })
+
+ /*    let product = {
         name: "FOSSIL",
         img: "https://rukminim1.flixcart.com/image/832/832/kyvvtzk0/watch/7/p/e/1-me3061it-fossil-men-original-imagbyhspyy3vsb9.jpeg?q=70",
         price: 12597,
-        qty: 1,
-    }
-    let dispatch = useDispatch()
+        qty: 1 */
+    
+    let dispatch = useDispatch();
 
-    let increHandler = ()=>{
-// To Dispatch an Action - useDispatch hook to be use
-dispatch(incrAction())
+    let increHandler = () => {
+        // To Dispatch an Action - useDispatch hook to be use
+        dispatch(incrAction())
     }
-    let decreHandler = ()=>{
+    let decreHandler = () => {
         // To Dispatch an Action - useDispatch hook to be use
         dispatch(decrAction())
     }
     return <>
 
         <div className="container mt-5">
+            <pre>{JSON.stringify(product)}</pre>
             <div className="row">
                 <div className="col-md-6">
                     <table className="table table-hover">

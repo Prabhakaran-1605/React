@@ -8,6 +8,7 @@ class Navbar extends Component {
                 <div className="ml-auto">
                     <ul className="navbar-nav">
                         <li className="nav-list"> <Link to="/reduxproductEx" className="nav-link">Redux-Product</Link> </li>
+                        <li className="nav-list"> <Link to="/reduxmessageEx" className="nav-link">Redux-Message</Link> </li>
                     </ul>
                 </div>
             </nav>

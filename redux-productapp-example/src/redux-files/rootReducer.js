@@ -2,9 +2,8 @@
 //  and for that we have to rootReducer, without rootReducer also we can use.
 
 import { combineReducers } from "redux";
-import {productReducer} from "./product.reducer"
-import { messageReducer } from "../redux-files/message.reducer"
+import { messageReducer } from "./message.reducer";
 
-let rootReducer = combineReducers({product : productReducer, message: messageReducer})
+let rootReducer = combineReducers({message : messageReducer})
 
 export {rootReducer}
