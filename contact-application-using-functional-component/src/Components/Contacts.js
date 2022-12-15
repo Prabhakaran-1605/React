@@ -22,22 +22,23 @@ let Contacts = () => {
 
 
     return <>
+        <div className="progress-bar progress-bar-striped bg-warning">
+            <h1 className="text-danger"><b>Contact Details</b></h1>
+            {/* <pre>{JSON.stringify(user)}</pre> */}
+            <div className="container">
+                <div className="row">
+                    <div className="col-8">
+                        {user.contacts.length > 0 ? <><Contactlist user_contact={user.contacts} selected_user={selected_contact_details} /> </> : null}
+                    </div>
+                    <div className="col-4">
+                        {Object.keys(sel_user.sel_contact).length > 0 ? <> <Contactdetails user_contact_details={sel_user.sel_contact} /></> : null}
 
-        <h1 className="text-danger"><b>Contact Details</b></h1>
-        <pre>{JSON.stringify(user)}</pre>
-        <div className="container">
-            <div className="row">
-                <div className="col-8">
-                    {user.contacts.length > 0 ? <><Contactlist user_contact={user.contacts} selected_user={selected_contact_details} /> </> : null}
-                </div>
-                <div className="col-4">
-                    {Object.keys(sel_user.sel_contact).length > 0 ? <> <Contactdetails user_contact_details={sel_user.sel_contact} /></> : null}
-
+                    </div>
                 </div>
             </div>
+
+
         </div>
-
-
 
     </>
 

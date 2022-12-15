@@ -9,7 +9,7 @@ let Contactlist = (props) => {
     return <>
 
 <h1 className="text-danger"><b> Contact List </b></h1>
-        <pre>{JSON.stringify(props)}</pre>
+        {/* <pre>{JSON.stringify(props)}</pre> */}
 
         <div className="container">
             <div className="row  bg-dark text-white">

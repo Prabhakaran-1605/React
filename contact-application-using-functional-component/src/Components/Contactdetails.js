@@ -1,7 +1,7 @@
 let Contactdetails = (props) => {
     return <>
         <h1 className="text-danger"><b>Contact Details</b></h1>
-        <pre>{JSON.stringify(props.user_contact_details)}</pre>
+        {/* <pre>{JSON.stringify(props.user_contact_details)}</pre> */}
 
         <div className="container">
 
