@@ -18,6 +18,8 @@ let USERSUCCESS = "USERSUCCESS"
 
 let USERFAILURE = "USERFAILURE"
 
+let SELECTEDUSER = "SELECTEDUSER"
+
 
 // Action
 // Action - is a function returns actionable object.
@@ -38,6 +40,10 @@ let userfailure = ()=>{
     return {type : USERFAILURE, payload: "Failed"}
 }
 
+let sel_user = (singleuser)=>{
+    return {type : SELECTEDUSER, payload: singleuser} 
+}
+
 let useraction = ()=>{
 
 return async(dispatch)=>{
@@ -51,8 +57,7 @@ return async(dispatch)=>{
 
 }
 
-
 } 
 
-export {USERFAILURE,USERREQ,USERSUCCESS,useraction}
+export {USERFAILURE,USERREQ,USERSUCCESS,useraction,sel_user,SELECTEDUSER}
 

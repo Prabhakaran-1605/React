@@ -20,7 +20,7 @@ import { composeWithDevTools } from "redux-devtools-extension"
 import thunk from "redux-thunk"
 import logger from "redux-logger"
 
-let store = legacy_createStore(userReducer, composeWithDevTools(applyMiddleware(logger,thunk)))
+let store = legacy_createStore(userReducer,composeWithDevTools(applyMiddleware(logger,thunk)))
 
 
 // Redux Thunk and logger is a middleware used to invoke rest API in redux action

@@ -7,9 +7,9 @@
 
 // We need to import action type from user.action.js file
 
-import { USERREQ, USERSUCCESS, USERFAILURE } from "./user.action"
+import { USERREQ, USERSUCCESS, USERFAILURE, SELECTEDUSER } from "./user.action"
 
-let initialState = { Users: {}, message: "" }
+let initialState = { users: {}, message: "", sel_users: {} };
 
 
 let userReducer = (state = initialState, action) => {
@@ -18,11 +18,13 @@ let userReducer = (state = initialState, action) => {
 
     switch (type) {
         case USERREQ:
-            return { ...state, }
+            return { ...state }
         case USERSUCCESS:
-            return { users: payload }
+            return { ...state, users: payload, message: "passed" }
         case USERFAILURE:
             return { ...state, message: payload }
+        case SELECTEDUSER:
+            return { ...state, sel_users: payload }
         default:
             return state
 

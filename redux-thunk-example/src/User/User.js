@@ -1,3 +1,4 @@
+import { sel_user } from "../Redux/user.action"
 import { useEffect } from "react"
 
 // useEffect hook is imported to use it as a life cycle method.
@@ -12,14 +13,21 @@ let User = () => {
 
     let dispatch = useDispatch()
 
-    let users = useSelector((state) => { return state.users })
+    let x = useSelector((state) => { return state.users })
+    let y = useSelector((state) => { return state.sel_users })
+
+    let useHandler = (singleuser)=>{
+        console.log(singleuser.id)
+        dispatch(sel_user(singleuser))}
+
 
     useEffect(() => {
-        dispatch(useraction())
-    }, [])
+        dispatch(useraction());  
+    }, []);
 
-    return <>
-        <pre>{JSON.stringify(users)}</pre>
+
+    return <div>
+        <pre>{JSON.stringify(x)}</pre>
         <div className="container mt-5">
             <div className="row">
                 <div className="col-md-8">
@@ -34,27 +42,25 @@ let User = () => {
                             </tr>
                         </thead>
                         <tbody>
-{/* {Object.keys(users).length>0 ? <>
-                            {users.users.map((singleuser, index) => {
-                                    return <tr key={index}>
+                            {Object.keys(x).length > 0 ? <>
+                            {x.users.map((singleuser, index) => {
+                                return <tr key={index} onClick={useHandler.bind(this,singleuser)}>
                                     <td>{singleuser.id}</td>
                                     <td>{singleuser.firstName}</td>
                                     <td> <img src={singleuser.image} height="100px" width="100px" alt="#" /></td>
                                     <td>{singleuser.email}</td>
                                     <td>{singleuser.gender}</td>
-                                    </tr>                                   
-                                })  }</>: null}
- */}
-
-                    </tbody>
-                </table>
+                                </tr>
+                            })}</> : null}
+                        </tbody>
+                    </table>
+                </div>
+                <div className="col-md-4">
+                    <h1>User Details</h1>
+                    <pre>{JSON.stringify(y)}</pre>
+                </div>
             </div>
         </div>
     </div>
-
-
-
-
-    </>
 }
 export default User
