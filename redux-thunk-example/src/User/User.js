@@ -13,7 +13,7 @@ let User = () => {
 
     let dispatch = useDispatch()
 
-    let x = useSelector((state) => { return state.users })
+    let x = useSelector((state) => { return state.users})
     let y = useSelector((state) => { return state.sel_users })
 
     let useHandler = (singleuser) => {
@@ -61,15 +61,15 @@ let User = () => {
                     <pre>{JSON.stringify(y)}</pre>
                     <div className="card">
                         <div className="card-header bg-danger">
-                        <img src={y.image} alt="image1" height="100px"/> </div>
+                            <img src={y.image} alt="image1" height="100px" /> </div>
                         <div className="card-body bg-primary" >
-                        <ul className="list-group ">
+                            <ul className="list-group ">
                                 <li className="list-group-item bg-success text-white"><b>Id: {y.id}</b> </li>
                                 <li className="list-group-item bg-success text-white"><b>FirstName</b> {y.firstName} </li>
                                 <li className="list-group-item bg-success text-white"><b>Last Name:</b> {y.lastName}</li>
                                 <li className="list-group-item bg-success text-white"><b>Age:</b>{y.age}</li>
                                 <li className="list-group-item bg-success text-white"><b>Gender:</b>{y.gender} </li>
-                                </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
